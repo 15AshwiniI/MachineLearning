@@ -1,0 +1,16 @@
+I primarily used the ABAGAIL repository (https://github.com/pushkar/ABAGAIL) and the sklearn library
+
+The code for each of the clustering and dimensionality reduction methods lies in its own folder such as EM, Feature Aggl, ICA, Kmeans, PCA, and randomProj. To run the python scripts just do:
+python *.py
+
+The dimensionality reduction python files will display matplotlib graphs and the clustering algorithm files will print out the accuracies across a hyperparameter search.
+
+The csv files are possible dataset files that can be used to run the neural network code.
+
+python clustering_after_dim_red_EM.py   will print out accuracies of clustering after dimensionality reduction for EM
+python clustering_after_dim_red.py   accuracies for K-means
+
+
+To run the neural network code,
+just run:
+java -cp ABAGAIL.jar project2.MnistTest2
